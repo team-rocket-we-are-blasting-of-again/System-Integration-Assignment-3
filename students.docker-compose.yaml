@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  students_postgres:
+    container_name: students_postgres
+    image: postgres:13.1-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    networks:
+      school:
+    volumes:
+      - db:/var/lib/postgresql
+  student_service:
+    container_name: student_service
+    image: teamrocket/students:1.0
+    depends_on:
+      - students_postgres
+    environment:
+      STUDENTS_SERVER_PORT: 8888
+      STUDENTS_POSTGRES_HOST: students_postgres
+      STUDENTS_POSTGRES_PORT: 5433
+      STUDENTS_POSTGRES_DB: postgres
+      STUDENTS_POSTGRES_USERNAME: postgres
+      STUDENTS_POSTGRES_PASSWORD: postgres
+      STUDENTS_KAFKA_HOST: kafka
+      STUDENTS_KAFKA_PORT: 9092
+    ports:
+      - "8888:8888"
+    networks:
+      school:
+
+volumes:
+  db:
+
+networks:
+  school:
+    external: true

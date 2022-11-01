@@ -8,6 +8,11 @@
 - Magdalena Wawrzak cph-mw216@cphbusiness.dk
 - Tobias Zimmermann cph-tz11@cphbusiness.dk
 
+## Services
+
+- ![Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)
+- ![Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
+
 ## Project Requirements
 
 ![use case diagram](./images/use-case-diagram.png)
