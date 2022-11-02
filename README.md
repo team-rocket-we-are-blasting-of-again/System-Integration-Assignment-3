@@ -67,9 +67,9 @@ The functional requirements are represented in section 2.1.
      
 ### 1.2 Services
 
-- ![Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)  
-- ![Order Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
-- ![Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)
+- [Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)  
+- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
+- [Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)
 
 ## 2.0 Diagrams  
   
@@ -97,9 +97,27 @@ The following is a list over the architecture styles used in developing this sys
 APIs used in this system:  
 - REST (Library service has obtained level 3 with HATEOS)    
 - gRPC (client on order service and server on student service)    
-
+  
+### 3.2 Hexagonal architecture    
+Library Resources Service is designed in accordance with the determinants of hexagonal architecture. We distinguish the following:
+    
+- **Application layer:** consists of REST API interfaces and controllers as well as Kafka Event Listener
+  
+![Application layer](./images/application-layer.PNG)  
+     
+The interface describes how the system can be called with REST endpoints - endpoints  are implemented according to the application logic.   
+  
+- **Domain layer:** consists of services and repositories. Here the state of business objects is maintained as well as CRUD operations take place.  
+  
+![Application layer](./images/domain-layer.PNG)  
+  
+- **Infrastructure layer:**  It is responsible for interaction with the message broker as well as with the database. We let the Hibernate framework steer connection to the database.     
+ 
+![Application layer](./images/infrastructure-layer.PNG)   
 
 ## TODO:  
+EVERYTHING WITH ORDER SERVICE (README AND CODE)  
+
 The task includes a peer review of other project solutions. The review should address 
 questions about:
 - the proper selection of technologies and the criteria, used for making the choices
