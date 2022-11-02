@@ -11,7 +11,7 @@
 ## 1.0 Project requirements
 *All requirements for this project can be found in the following link:*  
   
-- ![Objective for this assignment](./files/A4-MP3.pdf)  
+- [Objective for this assignment](./files/A4-MP3.pdf)  
   
 ### 1.1 Services
 
