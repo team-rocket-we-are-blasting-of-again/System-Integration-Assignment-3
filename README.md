@@ -16,7 +16,7 @@
 ### 1.1 Services
 
 - [Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)  
-- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
+- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/MISSING LINK)
 - [Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)  
   
 ### 1.2 Functional and non-functional requirements
