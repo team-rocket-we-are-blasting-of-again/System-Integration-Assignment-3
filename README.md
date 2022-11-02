@@ -12,8 +12,14 @@
 *All requirements for this project can be found in the following link:*  
   
 - ![Objective for this assignment](./files/A4-MP3.pdf)  
+  
+### 1.1 Services
 
-### 1.1 Functional and non-functional requirements
+- [Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)  
+- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
+- [Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)  
+  
+### 1.2 Functional and non-functional requirements
 This section describes the functional and non-functional requirements of the system.  
   
 **NFR** = Non-functional requirement  
@@ -65,12 +71,6 @@ courses can be removed from the system.
   
 The functional requirements are represented in section 2.1.  
      
-### 1.2 Services
-
-- [Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)  
-- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
-- [Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)
-
 ## 2.0 Diagrams  
   
 ### 2.1 Use dase diagram  
