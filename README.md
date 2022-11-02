@@ -24,8 +24,27 @@ Some description of what happens when a book is bought
 ![flow chart](./images/flow-chart.png)  
 
 ## Architecture style  
+This following picture shows our overall system architecture:  
+![System architecture](./images/Architecture-style.PNG)  
   
 Architecture styles used in developing this system:
+- Microservices  
 - REST  
 - Event driven architecture (Pub/Sub)    
 - Hexagonal  
+  
+APIs used in this system:  
+- REST (Library service has obtained level 3 with HATEOS)    
+- gRPC   
+
+
+## TODO:  
+The task includes a peer review of other project solutions. The review should address 
+questions about:
+- the proper selection of technologies and the criteria, used for making the choices
+- the quality of the design
+- the readability of the diagrams and the code
+- the readiness for further extention and upgrade of the system with new 
+microservices
+- the proper use of standards, recommendations, and the best practices od software 
+development
