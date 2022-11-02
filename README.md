@@ -13,13 +13,13 @@
   
 - ![Objective for this assignment](./files/A4-MP3.pdf)  
 
-### 1.1 Functional and nun-functional requirements
+### 1.1 Functional and non-functional requirements
 This section describes the functional and non-functional requirements of the system.  
   
-**NFR** = Non-functional requirement
-**R** = Functional requirement  
+**NFR** = Non-functional requirement  
+**R** = Functional requirement    
   
-**Non-functional requirements**   
+#### **Non-functional requirements**   
   
 **NFR1:** The system must be made using a microservice architecture, so as to decouple the
 services and make the system modular. Making it easier to maintain, test and deploy each
@@ -37,7 +37,7 @@ faster.
 **NFR5:** The services must use a web-based API, so that future user-applications can make
 use of this system equally.  
   
-**Functional requirements**  
+#### **Functional requirements**  
 
 **R1:** As a student, I want to be able to purchase a book, so that I can have learning material
 related to my assigned courses.  
@@ -62,7 +62,9 @@ information can be managed and made up to date.
   
 **R8:** As an administrator, I want to be able to delete courses, so that outdated and irrelevant
 courses can be removed from the system.    
-    
+  
+The functional requirements are represented in section 2.1.  
+     
 ### 1.2 Services
 
 - ![Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)  
