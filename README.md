@@ -21,4 +21,11 @@
 
 Some description of what happens when a book is bought
 
-![flow chart](./images/flow-chart.png)
+![flow chart](./images/flow-chart.png)  
+
+## Architecture style  
+  
+Architecture styles used in developing this system:
+- REST  
+- Event driven architecture (Pub/Sub)    
+- Hexagonal  
