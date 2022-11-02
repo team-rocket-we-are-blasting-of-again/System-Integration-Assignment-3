@@ -18,8 +18,6 @@ services:
   librarydb:
     image: postgres:13.1-alpine
     container_name: librarydb
-    ports:
-      - "5330:5432"
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres

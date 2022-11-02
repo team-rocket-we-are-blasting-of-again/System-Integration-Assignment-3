@@ -4,8 +4,6 @@ services:
   studentdb:
     container_name: students-db
     image: postgres:13.1-alpine
-    ports:
-      - "5433:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
