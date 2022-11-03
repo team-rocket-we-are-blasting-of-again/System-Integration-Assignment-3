@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-  library_service:
+  library:
     image: teamrocket/library-service:1.0
     container_name: library-service
     depends_on:
@@ -9,18 +9,15 @@ services:
     ports:
       - "8030:8030"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresqldb:5432/postgres
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://librarydb:5432/postgres
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
       - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
     networks:
       school:
-  library_postgres:
-    image: 'postgres:13.1-alpine'
-    container_name: postgresqldb
-    ports:
-      - 5330:5432
+  librarydb:
+    image: postgres:13.1-alpine
+    container_name: librarydb
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
