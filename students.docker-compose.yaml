@@ -28,6 +28,7 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     ports:
       - "8888:8888"
+      - "9000:9000"
     networks:
       school:
 
