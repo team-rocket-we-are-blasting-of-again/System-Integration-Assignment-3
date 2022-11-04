@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  orders:
+    container_name: order-service
+    image: teamrocket/order-service:1.0
+    ports:
+      - "8000:8000"
+    networks:
+      school:
+
+networks:
+  school:
+    external: true
