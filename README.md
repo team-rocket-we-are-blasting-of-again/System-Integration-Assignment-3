@@ -17,7 +17,7 @@ _All requirements for this project can be found in the following link:_
 ### 1.1 Services
 
 - [Library Service](https://github.com/team-rocket-we-are-blasting-of-again/library-resources-service)
-- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/MISSING LINK)
+- [Order Service](https://github.com/team-rocket-we-are-blasting-of-again/si_assignment_03_order_service)
 - [Student Service](https://github.com/team-rocket-we-are-blasting-of-again/sys-3-student-service)
 
 #### Start the application
@@ -153,18 +153,3 @@ The interface describes how the system can be called with REST endpoints - endpo
 - **Infrastructure layer:** It is responsible for interaction with the message broker as well as with the database. We let the Hibernate framework steer connection to the database.
 
 ![Application layer](./images/infrastructure-layer.PNG)
-
-## TODO:
-
-EVERYTHING WITH ORDER SERVICE (README AND CODE)
-
-The task includes a peer review of other project solutions. The review should address
-questions about:
-
-- the proper selection of technologies and the criteria, used for making the choices
-- the quality of the design
-- the readability of the diagrams and the code
-- the readiness for further extention and upgrade of the system with new
-  microservices
-- the proper use of standards, recommendations, and the best practices od software
-  development
