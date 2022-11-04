@@ -5,7 +5,7 @@ services:
     image: teamrocket/library-service:1.0
     container_name: library-service
     depends_on:
-      - library_postgres
+      - librarydb
     ports:
       - "8030:8030"
     environment:
